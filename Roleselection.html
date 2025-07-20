@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalConnect</title>
+  <link rel="icon" href="websitelogo.png" />
+  <link rel="stylesheet" href="rolestyle.css"/>
+</head>
+<body>
+  <div class="container">
+    <h2>Choose Your Role</h2>
+
+    <div class="roles">
+      <div class="role-card" onclick="selectRole('customer')" id="customerCard">
+        <div class="role-title">Customer</div>
+        <div class="role-description">Find and hire local service providers.</div>
+      </div>
+
+      <div class="role-card" onclick="selectRole('provider')" id="providerCard">
+        <div class="role-title">Service Provider</div>
+        <div class="role-description">Offer your services to local customers.</div>
+      </div>
+
+      <div class="role-card" onclick="selectRole('admin')" id="adminCard">
+        <div class="role-title">Admin</div>
+        <div class="role-description">Manage the platform and users.</div>
+      </div>
+    </div>
+
+    <button id="nextBtn" onclick="goNext()">Next</button>
+  </div>
+
+  <script src="roleselection.js"></script>
+</body>
